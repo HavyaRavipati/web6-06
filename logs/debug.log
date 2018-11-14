@@ -321,3 +321,64 @@ SyntaxError: Unexpected token <<
 2018-11-14T03:53:20.341Z - debug: START routing
 2018-11-14T03:53:20.341Z - debug: END routing
 2018-11-14T03:53:20.342Z - info: Loaded routing.
+2018-11-14T03:57:44.590Z - info: Environment variables loaded.
+2018-11-14T03:57:44.688Z - error: uncaughtException: Cannot find module '../data/products.json' date=Tue Nov 13 2018 21:57:44 GMT-0600 (Central Standard Time), pid=223520, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=70004736, heapTotal=61779968, heapUsed=38822640, external=19671368, loadavg=[0, 0, 0], uptime=750149.0299891
+Error: Cannot find module '../data/products.json'
+    at Function.Module._resolveFilename (module.js:548:15)
+    at Function.Module._load (module.js:475:25)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\utils\seeder.js:9:18)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:74:1)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:57:44.599Z - debug: START routing
+2018-11-14T03:57:44.599Z - debug: END routing
+2018-11-14T03:57:44.600Z - info: Loaded routing.
+2018-11-14T03:59:11.256Z - info: Environment variables loaded.
+2018-11-14T03:59:11.356Z - error: uncaughtException: listen EADDRINUSE :::8089 date=Tue Nov 13 2018 21:59:11 GMT-0600 (Central Standard Time), pid=225096, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=70496256, heapTotal=61779968, heapUsed=39095544, external=19680188, loadavg=[0, 0, 0], uptime=750235.699585
+Error: listen EADDRINUSE :::8089
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (C:\Users\s534089\44563\6-06\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:77:5)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:59:11.265Z - debug: START routing
+2018-11-14T03:59:11.265Z - debug: END routing
+2018-11-14T03:59:11.266Z - info: Loaded routing.
+2018-11-14T03:59:11.293Z - info: START seeder.
+2018-11-14T03:59:11.296Z - info: END Seeder. Sample data read and verified.
+2018-11-14T04:03:40.959Z - info: Environment variables loaded.
+2018-11-14T04:03:40.968Z - debug: START routing
+2018-11-14T04:03:40.968Z - debug: END routing
+2018-11-14T04:03:40.968Z - info: Loaded routing.
+2018-11-14T04:03:40.997Z - info: START seeder.
+2018-11-14T04:03:41.001Z - info: END Seeder. Sample data read and verified.
+2018-11-14T04:05:08.105Z - info: Environment variables loaded.
+2018-11-14T04:05:08.113Z - debug: START routing
+2018-11-14T04:05:08.113Z - debug: END routing
+2018-11-14T04:05:08.113Z - info: Loaded routing.
+2018-11-14T04:05:08.144Z - info: START seeder.
+2018-11-14T04:05:08.145Z - debug: 4 orders seeded
+2018-11-14T04:05:08.148Z - info: END Seeder. Sample data read and verified.
