@@ -5,9 +5,9 @@ const LOG = require('../utils/logger.js')
 
 // For Fall 2018.......................
 
-//const customers = require('../data/customers.json')
-//const products = require('../data/products.json')
-const orders = require('../data/orders.json')
+// const customers = require('../data/customers.json')
+const products = require('../data/products.json')
+// const orders = require('../data/orders.json')
 // const orderLineItems = require('../data/orderLineItems.json')
 
 //........................................................
@@ -50,8 +50,8 @@ module.exports = (app) => {
   db.orders.insert(orders)
 
   // // initialize app.locals (these objects will be available to our controllers)
-  app.locals.orders = db.orders.find(orders)
-  LOG.debug(`${app.locals.orders.query.length} orders seeded`)
+  // app.locals.orders = db.orders.find(orders)
+  // LOG.debug(`${app.locals.orders.query.length} orders seeded`)
 
   // // Each Order Line Item needs a product and an order...................
 
@@ -64,5 +64,7 @@ module.exports = (app) => {
   // // initialize app.locals (these objects will be available to our controllers)
   // app.locals.orderLineItems = db.orderLineItems.find(orderLineItems)
   // LOG.debug(`${app.locals.orderLineItems.query.length} orderLineItems seeded`)
+
+  
   LOG.info('END Seeder. Sample data read and verified.')
 }

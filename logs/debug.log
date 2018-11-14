@@ -265,3 +265,59 @@ Error: listen EADDRINUSE :::8089
 2018-11-14T03:36:41.895Z - info: START seeder.
 2018-11-14T03:36:41.900Z - debug: 4 orders seeded
 2018-11-14T03:36:41.900Z - info: END Seeder. Sample data read and verified.
+2018-11-14T03:43:47.784Z - error: uncaughtException: Unexpected token << date=Tue Nov 13 2018 21:43:47 GMT-0600 (Central Standard Time), pid=222928, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=68820992, heapTotal=61779968, heapUsed=37561064, external=19488493, loadavg=[0, 0, 0], uptime=749312.1315904
+C:\Users\s534089\44563\6-06\utils\seeder.js:8
+<<<<<<< HEAD
+  ^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:74:1)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:43:47.718Z - info: Environment variables loaded.
+2018-11-14T03:43:47.727Z - debug: START routing
+2018-11-14T03:43:47.727Z - debug: END routing
+2018-11-14T03:43:47.728Z - info: Loaded routing.
+2018-11-14T03:53:20.426Z - error: uncaughtException: Unexpected token << date=Tue Nov 13 2018 21:53:20 GMT-0600 (Central Standard Time), pid=219736, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=68919296, heapTotal=61255680, heapUsed=38068832, external=19606895, loadavg=[0, 0, 0], uptime=749884.7510489
+C:\Users\s534089\44563\6-06\utils\seeder.js:8
+<<<<<<< HEAD
+  ^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:74:1)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:53:20.325Z - info: Environment variables loaded.
+2018-11-14T03:53:20.341Z - debug: START routing
+2018-11-14T03:53:20.341Z - debug: END routing
+2018-11-14T03:53:20.342Z - info: Loaded routing.
