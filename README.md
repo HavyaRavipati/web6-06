@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Module 5 project.
 
 6-06
@@ -9,3 +10,9 @@ Module 5 project.
 
 
 
+=======
+Akhila Gandra - Product
+Havya Ravipati - OrderLine
+Varun - Order
+Marton Bagoly- Customer
+>>>>>>> dad9f8d981ddf52f4c998cd26bfe7e137067d75d
