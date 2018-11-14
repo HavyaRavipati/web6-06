@@ -1,0 +1,384 @@
+2018-11-14T03:14:16.207Z - info: Environment variables loaded.
+2018-11-14T03:14:16.327Z - error: uncaughtException: ENOENT: no such file or directory, stat 'C:\Users\s534089\44563\6-06\public\images\favicon.ico' date=Tue Nov 13 2018 21:14:16 GMT-0600 (Central Standard Time), pid=220152, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=68874240, heapTotal=61255680, heapUsed=38033408, external=19590031, loadavg=[0, 0, 0], uptime=747540.6640834
+Error: ENOENT: no such file or directory, stat 'C:\Users\s534089\44563\6-06\public\images\favicon.ico'
+    at Object.fs.statSync (fs.js:948:11)
+    at resolveSync (C:\Users\s534089\44563\6-06\node_modules\serve-favicon\index.js:187:17)
+    at favicon (C:\Users\s534089\44563\6-06\node_modules\serve-favicon\index.js:61:12)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:50:9)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:16:03.907Z - info: Environment variables loaded.
+2018-11-14T03:16:03.968Z - error: uncaughtException: Cannot find module './routes/index.js' date=Tue Nov 13 2018 21:16:03 GMT-0600 (Central Standard Time), pid=218516, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=68386816, heapTotal=61779968, heapUsed=37336112, external=19480301, loadavg=[0, 0, 0], uptime=747648.3169751
+Error: Cannot find module './routes/index.js'
+    at Function.Module._resolveFilename (module.js:548:15)
+    at Function.Module._load (module.js:475:25)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:67:16)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:18:16.039Z - error: uncaughtException: Router.use() requires a middleware function but got a Object date=Tue Nov 13 2018 21:18:15 GMT-0600 (Central Standard Time), pid=219656, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=68378624, heapTotal=61779968, heapUsed=37465088, external=19488493, loadavg=[0, 0, 0], uptime=747780.3865255
+TypeError: Router.use() requires a middleware function but got a Object
+    at Function.use (C:\Users\s534089\44563\6-06\node_modules\express\lib\router\index.js:458:13)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\routes\index.js:23:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:67:16)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:18:15.972Z - info: Environment variables loaded.
+2018-11-14T03:18:15.981Z - debug: START routing
+2018-11-14T03:20:52.629Z - error: uncaughtException: Router.use() requires a middleware function but got a Object date=Tue Nov 13 2018 21:20:52 GMT-0600 (Central Standard Time), pid=217044, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=68419584, heapTotal=61779968, heapUsed=37457192, external=19488493, loadavg=[0, 0, 0], uptime=747936.9773751
+TypeError: Router.use() requires a middleware function but got a Object
+    at Function.use (C:\Users\s534089\44563\6-06\node_modules\express\lib\router\index.js:458:13)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\routes\index.js:23:8)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:67:16)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:20:52.568Z - info: Environment variables loaded.
+2018-11-14T03:20:52.577Z - debug: START routing
+2018-11-14T03:21:54.401Z - info: Environment variables loaded.
+2018-11-14T03:21:54.466Z - error: uncaughtException: Unexpected token << date=Tue Nov 13 2018 21:21:54 GMT-0600 (Central Standard Time), pid=218728, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=68530176, heapTotal=61779968, heapUsed=37563488, external=19484681, loadavg=[0, 0, 0], uptime=747998.8119323
+C:\Users\s534089\44563\6-06\utils\seeder.js:2
+<<<<<<< HEAD
+^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:74:1)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:21:54.410Z - debug: START routing
+2018-11-14T03:21:54.410Z - debug: END routing
+2018-11-14T03:21:54.411Z - info: Loaded routing.
+2018-11-14T03:24:51.117Z - error: uncaughtException: Cannot find module '../data/customers.json' date=Tue Nov 13 2018 21:24:51 GMT-0600 (Central Standard Time), pid=220924, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=70414336, heapTotal=61779968, heapUsed=38756968, external=19671368, loadavg=[0, 0, 0], uptime=748175.4633485
+Error: Cannot find module '../data/customers.json'
+    at Function.Module._resolveFilename (module.js:548:15)
+    at Function.Module._load (module.js:475:25)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\utils\seeder.js:8:19)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:74:1)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:24:51.022Z - info: Environment variables loaded.
+2018-11-14T03:24:51.032Z - debug: START routing
+2018-11-14T03:24:51.033Z - debug: END routing
+2018-11-14T03:24:51.033Z - info: Loaded routing.
+2018-11-14T03:25:45.539Z - error: uncaughtException: Cannot find module '../data/products.json' date=Tue Nov 13 2018 21:25:45 GMT-0600 (Central Standard Time), pid=220828, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=69586944, heapTotal=61779968, heapUsed=38480632, external=19649258, loadavg=[0, 0, 0], uptime=748229.8868206
+Error: Cannot find module '../data/products.json'
+    at Function.Module._resolveFilename (module.js:548:15)
+    at Function.Module._load (module.js:475:25)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\utils\seeder.js:9:18)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:74:1)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:25:45.444Z - info: Environment variables loaded.
+2018-11-14T03:25:45.452Z - debug: START routing
+2018-11-14T03:25:45.452Z - debug: END routing
+2018-11-14T03:25:45.452Z - info: Loaded routing.
+2018-11-14T03:28:12.910Z - error: uncaughtException: Cannot find module '../data/products.json' date=Tue Nov 13 2018 21:28:12 GMT-0600 (Central Standard Time), pid=202304, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=69443584, heapTotal=61779968, heapUsed=38674208, external=19663176, loadavg=[0, 0, 0], uptime=748377.2507531
+Error: Cannot find module '../data/products.json'
+    at Function.Module._resolveFilename (module.js:548:15)
+    at Function.Module._load (module.js:475:25)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\utils\seeder.js:9:18)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:74:1)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:28:12.805Z - info: Environment variables loaded.
+2018-11-14T03:28:12.816Z - debug: START routing
+2018-11-14T03:28:12.816Z - debug: END routing
+2018-11-14T03:28:12.817Z - info: Loaded routing.
+2018-11-14T03:31:07.148Z - info: Environment variables loaded.
+2018-11-14T03:31:07.245Z - error: uncaughtException: Cannot find module '../data/products.json' date=Tue Nov 13 2018 21:31:07 GMT-0600 (Central Standard Time), pid=220012, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=71155712, heapTotal=61255680, heapUsed=39974592, external=19865683, loadavg=[0, 0, 0], uptime=748551.5892287
+Error: Cannot find module '../data/products.json'
+    at Function.Module._resolveFilename (module.js:548:15)
+    at Function.Module._load (module.js:475:25)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\utils\seeder.js:9:18)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:74:1)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:31:07.158Z - debug: START routing
+2018-11-14T03:31:07.158Z - debug: END routing
+2018-11-14T03:31:07.159Z - info: Loaded routing.
+2018-11-14T03:32:38.976Z - info: Environment variables loaded.
+2018-11-14T03:32:39.065Z - error: uncaughtException: Cannot find module '../data/orders.json' date=Tue Nov 13 2018 21:32:39 GMT-0600 (Central Standard Time), pid=218260, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=69697536, heapTotal=61779968, heapUsed=38637680, external=19671368, loadavg=[0, 0, 0], uptime=748643.4120285
+Error: Cannot find module '../data/orders.json'
+    at Function.Module._resolveFilename (module.js:548:15)
+    at Function.Module._load (module.js:475:25)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\utils\seeder.js:10:16)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:74:1)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:32:38.985Z - debug: START routing
+2018-11-14T03:32:38.985Z - debug: END routing
+2018-11-14T03:32:38.985Z - info: Loaded routing.
+2018-11-14T03:33:39.787Z - info: Environment variables loaded.
+2018-11-14T03:33:39.796Z - debug: START routing
+2018-11-14T03:33:39.796Z - debug: END routing
+2018-11-14T03:33:39.796Z - info: Loaded routing.
+2018-11-14T03:33:39.823Z - info: START seeder.
+2018-11-14T03:33:39.829Z - debug: 4 orders seeded
+2018-11-14T03:33:39.829Z - info: END Seeder. Sample data read and verified.
+2018-11-14T03:36:41.964Z - error: uncaughtException: listen EADDRINUSE :::8089 date=Tue Nov 13 2018 21:36:41 GMT-0600 (Central Standard Time), pid=221360, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=70156288, heapTotal=61779968, heapUsed=39220720, external=19680188, loadavg=[0, 0, 0], uptime=748886.3071501
+Error: listen EADDRINUSE :::8089
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (C:\Users\s534089\44563\6-06\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:77:5)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:36:41.856Z - info: Environment variables loaded.
+2018-11-14T03:36:41.866Z - debug: START routing
+2018-11-14T03:36:41.867Z - debug: END routing
+2018-11-14T03:36:41.867Z - info: Loaded routing.
+2018-11-14T03:36:41.895Z - info: START seeder.
+2018-11-14T03:36:41.900Z - debug: 4 orders seeded
+2018-11-14T03:36:41.900Z - info: END Seeder. Sample data read and verified.
+2018-11-14T03:43:47.784Z - error: uncaughtException: Unexpected token << date=Tue Nov 13 2018 21:43:47 GMT-0600 (Central Standard Time), pid=222928, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=68820992, heapTotal=61779968, heapUsed=37561064, external=19488493, loadavg=[0, 0, 0], uptime=749312.1315904
+C:\Users\s534089\44563\6-06\utils\seeder.js:8
+<<<<<<< HEAD
+  ^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:74:1)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:43:47.718Z - info: Environment variables loaded.
+2018-11-14T03:43:47.727Z - debug: START routing
+2018-11-14T03:43:47.727Z - debug: END routing
+2018-11-14T03:43:47.728Z - info: Loaded routing.
+2018-11-14T03:53:20.426Z - error: uncaughtException: Unexpected token << date=Tue Nov 13 2018 21:53:20 GMT-0600 (Central Standard Time), pid=219736, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=68919296, heapTotal=61255680, heapUsed=38068832, external=19606895, loadavg=[0, 0, 0], uptime=749884.7510489
+C:\Users\s534089\44563\6-06\utils\seeder.js:8
+<<<<<<< HEAD
+  ^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:74:1)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:53:20.325Z - info: Environment variables loaded.
+2018-11-14T03:53:20.341Z - debug: START routing
+2018-11-14T03:53:20.341Z - debug: END routing
+2018-11-14T03:53:20.342Z - info: Loaded routing.
+2018-11-14T03:57:44.590Z - info: Environment variables loaded.
+2018-11-14T03:57:44.688Z - error: uncaughtException: Cannot find module '../data/products.json' date=Tue Nov 13 2018 21:57:44 GMT-0600 (Central Standard Time), pid=223520, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=70004736, heapTotal=61779968, heapUsed=38822640, external=19671368, loadavg=[0, 0, 0], uptime=750149.0299891
+Error: Cannot find module '../data/products.json'
+    at Function.Module._resolveFilename (module.js:548:15)
+    at Function.Module._load (module.js:475:25)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\utils\seeder.js:9:18)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:74:1)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:57:44.599Z - debug: START routing
+2018-11-14T03:57:44.599Z - debug: END routing
+2018-11-14T03:57:44.600Z - info: Loaded routing.
+2018-11-14T03:59:11.256Z - info: Environment variables loaded.
+2018-11-14T03:59:11.356Z - error: uncaughtException: listen EADDRINUSE :::8089 date=Tue Nov 13 2018 21:59:11 GMT-0600 (Central Standard Time), pid=225096, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=70496256, heapTotal=61779968, heapUsed=39095544, external=19680188, loadavg=[0, 0, 0], uptime=750235.699585
+Error: listen EADDRINUSE :::8089
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (C:\Users\s534089\44563\6-06\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:77:5)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-14T03:59:11.265Z - debug: START routing
+2018-11-14T03:59:11.265Z - debug: END routing
+2018-11-14T03:59:11.266Z - info: Loaded routing.
+2018-11-14T03:59:11.293Z - info: START seeder.
+2018-11-14T03:59:11.296Z - info: END Seeder. Sample data read and verified.
+2018-11-14T04:03:40.959Z - info: Environment variables loaded.
+2018-11-14T04:03:40.968Z - debug: START routing
+2018-11-14T04:03:40.968Z - debug: END routing
+2018-11-14T04:03:40.968Z - info: Loaded routing.
+2018-11-14T04:03:40.997Z - info: START seeder.
+2018-11-14T04:03:41.001Z - info: END Seeder. Sample data read and verified.
+2018-11-14T04:05:08.105Z - info: Environment variables loaded.
+2018-11-14T04:05:08.113Z - debug: START routing
+2018-11-14T04:05:08.113Z - debug: END routing
+2018-11-14T04:05:08.113Z - info: Loaded routing.
+2018-11-14T04:05:08.144Z - info: START seeder.
+2018-11-14T04:05:08.145Z - debug: 4 orders seeded
+2018-11-14T04:05:08.148Z - info: END Seeder. Sample data read and verified.
