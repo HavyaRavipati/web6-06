@@ -16,7 +16,7 @@ const notfoundstring = 'products'
 // GET all JSON
 api.get('/findall', (req, res) => {
   res.setHeader('Content-Type', 'application/json')
-  const data = req.app.locals.product.query
+  const data = req.app.locals.products.query
   res.send(JSON.stringify(data))
 })
 
@@ -24,8 +24,8 @@ api.get('/findall', (req, res) => {
 api.get('/findone/:id', (req, res) => {
   res.setHeader('Content-Type', 'application/json')
   const id = parseInt(req.params.id, 10) // base 10
-  const data = req.app.locals.product.query
-  const item = find(data, { _id })
+  const data = req.app.locals.products.query
+  const item = find(data, { _id : id})
   if (!item) { return res.end(notfoundstring) }
   res.send(JSON.stringify(item))
 })
@@ -55,7 +55,7 @@ api.get('/delete/:id', (req, res) => {
   LOG.info(`Handling GET /delete/:id ${req}`)
   const id = parseInt(req.params.id, 10) // base 10
   const data = req.app.locals.products.query
-  const item = find(data, { _id })
+  const item = find(data, { _id : id })
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`RETURNING VIEW FOR ${JSON.stringify(item)}`)
   return res.render('product/delete.ejs',
@@ -71,7 +71,7 @@ api.get('/details/:id', (req, res) => {
   LOG.info(`Handling GET /details/:id ${req}`)
   const id = parseInt(req.params.id, 10) // base 10
   const data = req.app.locals.products.query
-  const item = find(data, { _id })
+  const item = find(data, { _id : id })
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`RETURNING VIEW FOR ${JSON.stringify(item)}`)
   return res.render('product/details.ejs',
@@ -87,7 +87,7 @@ api.get('/edit/:id', (req, res) => {
   LOG.info(`Handling GET /edit/:id ${req}`)
   const id = parseInt(req.params.id, 10) // base 10
   const data = req.app.locals.products.query
-  const item = find(data, { _id })
+  const item = find(data, { _id :id })
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`RETURNING VIEW FOR${JSON.stringify(item)}`)
   return res.render('product/edit.ejs',
@@ -127,7 +127,7 @@ api.post('/save/:id', (req, res) => {
   const id = parseInt(req.params.id, 10) // base 10
   LOG.info(`Handling SAVING ID=${id}`)
   const data = req.app.locals.products.query
-  const item = find(data, { _id })
+  const item = find(data, { _id : id })
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`ORIGINAL VALUES ${JSON.stringify(item)}`)
   LOG.info(`UPDATED VALUES: ${JSON.stringify(req.body)}`)
@@ -147,7 +147,7 @@ api.post('/delete/:id', (req, res) => {
   const id = parseInt(req.params.id, 10) // base 10
   LOG.info(`Handling REMOVING ID=${id}`)
   const data = req.app.locals.products.query
-  const item = find(data, { _id })
+  const item = find(data, { _id : id })
   if (!item) {
     return res.end(notfoundstring)
   }
@@ -155,9 +155,10 @@ api.post('/delete/:id', (req, res) => {
     item.isActive = false
     console.log(`Deacctivated item ${JSON.stringify(item)}`)
   } else {
-    const item = remove(data, { _id })
+    const item = remove(data, { _id : id })
     console.log(`Permanently deleted item ${JSON.stringify(item)}`)
   }
   return res.redirect('/product')
 })
 
+module.exports = api
