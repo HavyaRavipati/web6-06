@@ -382,3 +382,54 @@ Error: listen EADDRINUSE :::8089
 2018-11-14T04:05:08.144Z - info: START seeder.
 2018-11-14T04:05:08.145Z - debug: 4 orders seeded
 2018-11-14T04:05:08.148Z - info: END Seeder. Sample data read and verified.
+2018-11-16T00:47:15.314Z - info: Environment variables loaded.
+2018-11-16T00:47:15.434Z - error: uncaughtException: Cannot find module '../models/order.js' date=Thu Nov 15 2018 18:47:15 GMT-0600 (Central Standard Time), pid=293348, uid=null, gid=null, cwd=C:\Users\s534089\44563\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\s534089\44563\6-06\app.js], rss=70107136, heapTotal=60731392, heapUsed=38837040, external=19680120, loadavg=[0, 0, 0], uptime=911519.6916895
+Error: Cannot find module '../models/order.js'
+    at Function.Module._resolveFilename (module.js:548:15)
+    at Function.Module._load (module.js:475:25)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\controllers\order.js:3:15)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\routes\index.js:23:22)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\s534089\44563\6-06\app.js:67:16)
+    at Module._compile (module.js:653:30)
+2018-11-16T00:47:15.343Z - debug: START routing
+2018-11-16T00:49:05.554Z - info: Environment variables loaded.
+2018-11-16T00:49:05.564Z - debug: START routing
+2018-11-16T00:49:05.588Z - debug: END routing
+2018-11-16T00:49:05.588Z - info: Loaded routing.
+2018-11-16T00:49:05.630Z - info: START seeder.
+2018-11-16T00:49:05.634Z - debug: 4 orders seeded
+2018-11-16T00:49:05.634Z - info: END Seeder. Sample data read and verified.
+2018-11-16T00:49:39.988Z - debug: GET /findall
+2018-11-16T00:49:45.944Z - debug: GET /findall
+2018-11-16T00:51:04.081Z - debug: GET /order/findall
+2018-11-16T00:51:35.931Z - debug: GET /order/findall/id:1
+2018-11-16T00:51:55.177Z - debug: GET /order/findall/1
+2018-11-16T00:53:31.173Z - debug: GET /order/findall/
+2018-11-16T00:56:27.594Z - debug: GET /order/find/1
+2018-11-16T00:56:41.941Z - info: Environment variables loaded.
+2018-11-16T00:56:41.951Z - debug: START routing
+2018-11-16T00:56:41.974Z - debug: END routing
+2018-11-16T00:56:41.974Z - info: Loaded routing.
+2018-11-16T00:56:42.004Z - info: START seeder.
+2018-11-16T00:56:42.008Z - debug: 4 orders seeded
+2018-11-16T00:56:42.008Z - info: END Seeder. Sample data read and verified.
+2018-11-16T00:56:45.462Z - debug: GET /order/find/1
+2018-11-16T00:58:13.238Z - debug: GET /order/find/2
+2018-11-16T00:58:21.225Z - debug: GET /order/findall
+2018-11-16T01:00:17.290Z - debug: GET /order/findone/1
