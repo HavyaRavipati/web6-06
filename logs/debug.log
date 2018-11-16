@@ -1,0 +1,218 @@
+2018-11-16T02:32:15.014Z - info: Environment variables loaded.
+2018-11-16T02:32:15.038Z - debug: START routing
+2018-11-16T02:32:15.080Z - debug: END routing
+2018-11-16T02:32:15.080Z - info: Loaded routing.
+2018-11-16T02:32:15.119Z - info: START seeder.
+2018-11-16T02:32:15.124Z - debug: 4 orders seeded
+2018-11-16T02:32:15.128Z - info: END Seeder. Sample data read and verified.
+2018-11-16T02:32:43.387Z - debug: GET /
+2018-11-16T02:32:43.398Z - debug: Request to /
+2018-11-16T02:32:43.463Z - debug: GET /Style.css
+2018-11-16T02:32:46.871Z - debug: GET /products
+2018-11-16T02:32:46.933Z - debug: GET /Style.css
+2018-11-16T02:32:49.392Z - debug: GET /
+2018-11-16T02:32:49.394Z - debug: Request to /
+2018-11-16T02:32:49.467Z - debug: GET /Style.css
+2018-11-16T02:32:51.182Z - debug: GET /customer
+2018-11-16T02:32:51.236Z - debug: GET /Style.css
+2018-11-16T02:32:52.333Z - debug: GET /order
+2018-11-16T02:32:52.395Z - debug: GET /Style.css
+2018-11-16T02:32:53.424Z - debug: GET /orderLineItem
+2018-11-16T02:32:53.491Z - debug: GET /Style.css
+2018-11-16T02:34:09.768Z - debug: GET /order
+2018-11-16T02:34:09.805Z - debug: GET /Style.css
+2018-11-16T02:34:12.164Z - debug: GET /products
+2018-11-16T02:34:12.182Z - debug: GET /Style.css
+2018-11-16T02:37:25.011Z - info: Environment variables loaded.
+2018-11-16T02:37:25.027Z - debug: START routing
+2018-11-16T02:37:25.050Z - debug: END routing
+2018-11-16T02:37:25.050Z - info: Loaded routing.
+2018-11-16T02:37:25.079Z - info: START seeder.
+2018-11-16T02:37:25.083Z - debug: 4 orders seeded
+2018-11-16T02:37:25.083Z - info: END Seeder. Sample data read and verified.
+2018-11-16T02:37:35.062Z - debug: GET /
+2018-11-16T02:37:35.074Z - debug: Request to /
+2018-11-16T02:38:02.641Z - info: Environment variables loaded.
+2018-11-16T02:38:02.653Z - debug: START routing
+2018-11-16T02:38:02.678Z - debug: END routing
+2018-11-16T02:38:02.678Z - info: Loaded routing.
+2018-11-16T02:38:02.713Z - info: START seeder.
+2018-11-16T02:38:02.716Z - debug: 4 orders seeded
+2018-11-16T02:38:02.716Z - info: END Seeder. Sample data read and verified.
+2018-11-16T02:38:05.808Z - debug: GET /
+2018-11-16T02:38:05.814Z - debug: Request to /
+2018-11-16T02:38:07.185Z - debug: GET /
+2018-11-16T02:38:07.189Z - debug: Request to /
+2018-11-16T02:38:15.568Z - debug: GET /
+2018-11-16T02:38:15.570Z - debug: Request to /
+2018-11-16T02:38:35.043Z - info: Environment variables loaded.
+2018-11-16T02:38:35.054Z - debug: START routing
+2018-11-16T02:38:35.078Z - debug: END routing
+2018-11-16T02:38:35.078Z - info: Loaded routing.
+2018-11-16T02:38:35.106Z - info: START seeder.
+2018-11-16T02:38:35.110Z - debug: 4 orders seeded
+2018-11-16T02:38:35.110Z - info: END Seeder. Sample data read and verified.
+2018-11-16T02:38:45.247Z - debug: GET /
+2018-11-16T02:38:45.257Z - debug: Request to /
+2018-11-16T02:39:57.579Z - info: Environment variables loaded.
+2018-11-16T02:39:57.592Z - debug: START routing
+2018-11-16T02:39:57.620Z - debug: END routing
+2018-11-16T02:39:57.620Z - info: Loaded routing.
+2018-11-16T02:39:57.671Z - info: START seeder.
+2018-11-16T02:39:57.675Z - debug: 4 orders seeded
+2018-11-16T02:39:57.675Z - info: END Seeder. Sample data read and verified.
+2018-11-16T02:40:10.269Z - debug: GET /
+2018-11-16T02:40:10.276Z - debug: Request to /
+2018-11-16T02:43:08.838Z - info: Environment variables loaded.
+2018-11-16T02:43:08.849Z - debug: START routing
+2018-11-16T02:43:08.872Z - debug: END routing
+2018-11-16T02:43:08.872Z - info: Loaded routing.
+2018-11-16T02:43:08.901Z - info: START seeder.
+2018-11-16T02:43:08.905Z - debug: 4 orders seeded
+2018-11-16T02:43:08.905Z - info: END Seeder. Sample data read and verified.
+2018-11-16T02:43:16.422Z - debug: GET /
+2018-11-16T02:43:16.431Z - debug: Request to /
+2018-11-16T02:43:22.374Z - debug: GET /order
+2018-11-16T02:43:23.528Z - debug: GET /order
+2018-11-16T02:43:24.614Z - debug: GET /product
+2018-11-16T02:43:25.612Z - debug: GET /product
+2018-11-16T02:43:26.030Z - debug: GET /product
+2018-11-16T02:43:26.426Z - debug: GET /product
+2018-11-16T02:45:31.779Z - info: Environment variables loaded.
+2018-11-16T02:45:31.791Z - debug: START routing
+2018-11-16T02:45:31.817Z - debug: END routing
+2018-11-16T02:45:31.817Z - info: Loaded routing.
+2018-11-16T02:45:31.855Z - info: START seeder.
+2018-11-16T02:45:31.861Z - debug: 4 orders seeded
+2018-11-16T02:45:31.861Z - info: END Seeder. Sample data read and verified.
+2018-11-16T02:45:39.235Z - debug: GET /
+2018-11-16T02:45:39.242Z - debug: Request to /
+2018-11-16T02:45:44.850Z - debug: GET /product
+2018-11-16T02:45:46.380Z - debug: GET /order
+2018-11-16T02:47:04.767Z - info: Environment variables loaded.
+2018-11-16T02:47:04.779Z - debug: START routing
+2018-11-16T02:47:04.806Z - debug: END routing
+2018-11-16T02:47:04.806Z - info: Loaded routing.
+2018-11-16T02:47:04.834Z - info: START seeder.
+2018-11-16T02:47:04.839Z - debug: 4 orders seeded
+2018-11-16T02:47:04.839Z - info: END Seeder. Sample data read and verified.
+2018-11-16T02:47:38.262Z - debug: GET /
+2018-11-16T02:47:38.268Z - debug: Request to /
+2018-11-16T02:47:42.574Z - debug: GET /
+2018-11-16T02:47:42.576Z - debug: Request to /
+2018-11-16T02:50:17.906Z - info: Environment variables loaded.
+2018-11-16T02:50:17.916Z - debug: START routing
+2018-11-16T02:50:17.937Z - debug: END routing
+2018-11-16T02:50:17.937Z - info: Loaded routing.
+2018-11-16T02:50:17.980Z - info: START seeder.
+2018-11-16T02:50:17.986Z - debug: 4 orders seeded
+2018-11-16T02:50:17.986Z - info: END Seeder. Sample data read and verified.
+2018-11-16T02:50:28.085Z - debug: GET /
+2018-11-16T02:50:28.091Z - debug: Request to /
+2018-11-16T02:50:29.138Z - debug: GET /css/main.css
+2018-11-16T02:50:29.406Z - debug: GET /images/favicon-32x32.png
+2018-11-16T02:50:29.409Z - debug: GET /images/manifest.json
+2018-11-16T02:50:29.431Z - debug: GET /images/favicon-16x16.png
+2018-11-16T02:50:29.438Z - debug: GET /images/favicon-96x96.png
+2018-11-16T02:50:29.446Z - debug: GET /images/android-icon-192x192.png
+2018-11-16T02:50:33.032Z - debug: GET /product
+2018-11-16T02:50:36.236Z - debug: GET /order
+2018-11-16T02:51:18.543Z - info: Environment variables loaded.
+2018-11-16T02:51:18.554Z - debug: START routing
+2018-11-16T02:51:18.576Z - debug: END routing
+2018-11-16T02:51:18.576Z - info: Loaded routing.
+2018-11-16T02:51:18.604Z - info: START seeder.
+2018-11-16T02:51:18.608Z - debug: 4 orders seeded
+2018-11-16T02:51:18.608Z - info: END Seeder. Sample data read and verified.
+2018-11-16T02:51:28.804Z - debug: GET /
+2018-11-16T02:51:28.817Z - debug: Request to /
+2018-11-16T02:51:32.247Z - debug: GET /product
+2018-11-16T02:57:11.191Z - debug: GET /customer
+2018-11-16T02:57:14.444Z - debug: GET /orderline
+2018-11-16T02:57:17.581Z - debug: GET /product
+2018-11-16T03:00:26.237Z - debug: GET /product
+2018-11-16T03:01:50.535Z - debug: GET /product
+2018-11-16T03:03:32.545Z - info: Environment variables loaded.
+2018-11-16T03:03:32.648Z - error: uncaughtException: listen EADDRINUSE :::8089 date=Thu Nov 15 2018 21:03:32 GMT-0600 (Central Standard Time), pid=14392, uid=null, gid=null, cwd=C:\44-563\6-06\6-06\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\44-563\6-06\6-06\6-06\app.js], rss=71528448, heapTotal=62304256, heapUsed=40071744, external=19813960, loadavg=[0, 0, 0], uptime=346160.0002887
+Error: listen EADDRINUSE :::8089
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (C:\44-563\6-06\6-06\6-06\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\44-563\6-06\6-06\6-06\app.js:77:5)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-16T03:03:32.562Z - debug: START routing
+2018-11-16T03:03:32.596Z - debug: END routing
+2018-11-16T03:03:32.597Z - info: Loaded routing.
+2018-11-16T03:03:32.622Z - info: START seeder.
+2018-11-16T03:03:32.627Z - debug: 4 orders seeded
+2018-11-16T03:03:32.627Z - info: END Seeder. Sample data read and verified.
+2018-11-16T03:03:58.191Z - info: Environment variables loaded.
+2018-11-16T03:03:58.296Z - error: uncaughtException: listen EADDRINUSE :::8089 date=Thu Nov 15 2018 21:03:58 GMT-0600 (Central Standard Time), pid=22268, uid=null, gid=null, cwd=C:\44-563\6-06\6-06\6-06, execPath=C:\Program Files\nodejs\node.exe, version=v8.12.0, argv=[C:\Program Files\nodejs\node.exe, C:\44-563\6-06\6-06\6-06\app.js], rss=71790592, heapTotal=61779968, heapUsed=40677800, external=19932362, loadavg=[0, 0, 0], uptime=346185.6462536
+Error: listen EADDRINUSE :::8089
+    at Server.setupListenHandle [as _listen2] (net.js:1360:14)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (C:\44-563\6-06\6-06\6-06\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\44-563\6-06\6-06\6-06\app.js:77:5)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Function.Module.runMain (module.js:694:10)
+    at startup (bootstrap_node.js:204:16)
+    at bootstrap_node.js:625:3
+2018-11-16T03:03:58.202Z - debug: START routing
+2018-11-16T03:03:58.228Z - debug: END routing
+2018-11-16T03:03:58.228Z - info: Loaded routing.
+2018-11-16T03:03:58.264Z - info: START seeder.
+2018-11-16T03:03:58.267Z - debug: 4 orders seeded
+2018-11-16T03:03:58.267Z - info: END Seeder. Sample data read and verified.
+2018-11-16T03:04:55.429Z - info: Environment variables loaded.
+2018-11-16T03:04:55.438Z - debug: START routing
+2018-11-16T03:04:55.460Z - debug: END routing
+2018-11-16T03:04:55.460Z - info: Loaded routing.
+2018-11-16T03:04:55.488Z - info: START seeder.
+2018-11-16T03:04:55.491Z - debug: 4 orders seeded
+2018-11-16T03:04:55.491Z - info: END Seeder. Sample data read and verified.
+2018-11-16T03:05:08.535Z - debug: GET /
+2018-11-16T03:05:08.542Z - debug: Request to /
+2018-11-16T03:05:11.213Z - debug: GET /product
+2018-11-16T03:08:57.598Z - info: Environment variables loaded.
+2018-11-16T03:08:57.608Z - debug: START routing
+2018-11-16T03:08:57.632Z - debug: END routing
+2018-11-16T03:08:57.632Z - info: Loaded routing.
+2018-11-16T03:08:57.667Z - info: START seeder.
+2018-11-16T03:08:57.671Z - debug: 4 orders seeded
+2018-11-16T03:08:57.671Z - info: END Seeder. Sample data read and verified.
+2018-11-16T03:09:07.784Z - debug: GET /
+2018-11-16T03:09:07.790Z - debug: Request to /
+2018-11-16T03:09:10.518Z - debug: GET /product
+2018-11-16T03:10:12.286Z - info: Environment variables loaded.
+2018-11-16T03:10:12.296Z - debug: START routing
+2018-11-16T03:10:12.321Z - debug: END routing
+2018-11-16T03:10:12.322Z - info: Loaded routing.
+2018-11-16T03:10:12.355Z - info: START seeder.
+2018-11-16T03:10:12.359Z - debug: 4 orders seeded
+2018-11-16T03:10:12.359Z - info: END Seeder. Sample data read and verified.
+2018-11-16T03:10:26.883Z - debug: GET /
+2018-11-16T03:10:26.892Z - debug: Request to /
+2018-11-16T03:10:29.737Z - debug: GET /product
+2018-11-16T03:13:59.040Z - info: Environment variables loaded.
+2018-11-16T03:13:59.049Z - debug: START routing
+2018-11-16T03:13:59.071Z - debug: END routing
+2018-11-16T03:13:59.071Z - info: Loaded routing.
+2018-11-16T03:13:59.101Z - info: START seeder.
+2018-11-16T03:13:59.104Z - debug: 4 orders seeded
+2018-11-16T03:13:59.104Z - info: END Seeder. Sample data read and verified.
+2018-11-16T03:14:12.198Z - debug: GET /
+2018-11-16T03:14:12.205Z - debug: Request to /
+2018-11-16T03:14:14.557Z - debug: GET /product
