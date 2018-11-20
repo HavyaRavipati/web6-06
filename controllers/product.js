@@ -1,7 +1,6 @@
-
 /**
  * Controller for the product page
- * @author Gandra, Akhila
+ * @author potu, preetham
  */
 const express = require('express')
 const api = express.Router()
@@ -25,7 +24,7 @@ api.get('/findone/:id', (req, res) => {
   res.setHeader('Content-Type', 'application/json')
   const id = parseInt(req.params.id, 10) // base 10
   const data = req.app.locals.products.query
-  const item = find(data, { _id : id})
+  const item = find(data, { _productid: id })
   if (!item) { return res.end(notfoundstring) }
   res.send(JSON.stringify(item))
 })
@@ -55,7 +54,7 @@ api.get('/delete/:id', (req, res) => {
   LOG.info(`Handling GET /delete/:id ${req}`)
   const id = parseInt(req.params.id, 10) // base 10
   const data = req.app.locals.products.query
-  const item = find(data, { _id : id })
+  const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`RETURNING VIEW FOR ${JSON.stringify(item)}`)
   return res.render('product/delete.ejs',
@@ -71,7 +70,7 @@ api.get('/details/:id', (req, res) => {
   LOG.info(`Handling GET /details/:id ${req}`)
   const id = parseInt(req.params.id, 10) // base 10
   const data = req.app.locals.products.query
-  const item = find(data, { _id : id })
+  const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`RETURNING VIEW FOR ${JSON.stringify(item)}`)
   return res.render('product/details.ejs',
@@ -87,7 +86,7 @@ api.get('/edit/:id', (req, res) => {
   LOG.info(`Handling GET /edit/:id ${req}`)
   const id = parseInt(req.params.id, 10) // base 10
   const data = req.app.locals.products.query
-  const item = find(data, { _id :id })
+  const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`RETURNING VIEW FOR${JSON.stringify(item)}`)
   return res.render('product/edit.ejs',
@@ -108,35 +107,31 @@ api.post('/save', (req, res) => {
   const item = new Model()
   LOG.info(`NEW ID ${req.body._id}`)
   item._id = parseInt(req.body._id, 10) // base 10
-  //item.productName = req.body.productName
-  item.description = req.body.productDescription
-  item.Unitprice = parseInt(req.body.price, 10)
-  item.status = req.body.status
-  item.MFD = req.body.MFD
-  item.EXD = req.body.EXD
+  item.productKey = req.body.productKey
+  item.description = req.body.description
+  item.unitPrice = parseInt(req.body.unitPrice, 10)
+  
 
     data.push(item)
     LOG.info(`SAVING NEW product ${JSON.stringify(item)}`)
     return res.redirect('/product')
   }
 )
-//This is post update
+
 // POST update
 api.post('/save/:id', (req, res) => {
   LOG.info(`Handling SAVE request ${req}`)
   const id = parseInt(req.params.id, 10) // base 10
   LOG.info(`Handling SAVING ID=${id}`)
   const data = req.app.locals.products.query
-  const item = find(data, { _id : id })
+  const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`ORIGINAL VALUES ${JSON.stringify(item)}`)
   LOG.info(`UPDATED VALUES: ${JSON.stringify(req.body)}`)
-  //item.productName = req.body.productName
+  item.productKey = req.body.productKey
   item.description = req.body.description
-  item.Unitprice = parseInt(req.body.Unitprice, 10)
-  //item.productCategory = req.body.productCategory
-  //item.sellerId = req.body.sellerId
-  LOG.info(`SAVING UPDATED product ${JSON.stringify(item)}`)
+  item.unitPrice = parseInt(req.body.unitPrice, 10)
+   LOG.info(`SAVING UPDATED product ${JSON.stringify(item)}`)
   return res.redirect('/product')
   
 })
@@ -147,7 +142,7 @@ api.post('/delete/:id', (req, res) => {
   const id = parseInt(req.params.id, 10) // base 10
   LOG.info(`Handling REMOVING ID=${id}`)
   const data = req.app.locals.products.query
-  const item = find(data, { _id : id })
+  const item = find(data, { _id: id })
   if (!item) {
     return res.end(notfoundstring)
   }
@@ -155,7 +150,7 @@ api.post('/delete/:id', (req, res) => {
     item.isActive = false
     console.log(`Deacctivated item ${JSON.stringify(item)}`)
   } else {
-    const item = remove(data, { _id : id })
+    const item = remove(data, { _id: id })
     console.log(`Permanently deleted item ${JSON.stringify(item)}`)
   }
   return res.redirect('/product')

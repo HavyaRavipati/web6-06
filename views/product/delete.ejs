@@ -1,1 +1,26 @@
-<h1>delete the product</h1>
+
+
+
+<br/>
+<br/>
+<h2>Confirm deletion of Product</h2>
+<br/>
+<br/>  ID:
+<%=product._id %>
+<br> Product Key:
+<%=product.productKey %>
+<br> Product Description:
+<%=product.description %>
+<br> Unit Price:
+<%=product.unitPrice %>
+   <br/>   
+            <br/>
+            <br/>
+
+            <form method="get" action="/product">
+              <input type="submit" value="Return to list" class="btn btn-caution" />
+            </form>
+            <br/>
+            <form method="POST" action="/product/delete/<%= product._id %>">
+              <input type="submit" value="Delete this item" class="btn btn-danger pull-right" />
+            </form>

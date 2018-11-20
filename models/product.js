@@ -21,11 +21,6 @@ const ProductSchema = new mongoose.Schema({
     min: 0,
     max: 100000
   },
-  status: {
-     type: String,
-     required: true,
-     default: 'Available'
-  },
   MFD:
   {
     type: String,
@@ -37,7 +32,6 @@ const ProductSchema = new mongoose.Schema({
     type: String,
     required: true,
     default: "Best before 2 months from MFD"
-
   }
 
 })

@@ -6,7 +6,7 @@ const LOG = require('../utils/logger.js')
 // For Fall 2018.......................
 
 // const customers = require('../data/customers.json')
-//const products = require('../data/products.json')
+const products = require('../data/products.json')
 const orders = require('../data/orders.json')
 //const orderLineItems = require('../data/orderLineItems.json')
 
@@ -18,27 +18,27 @@ module.exports = (app) => {
 
   // Customers don't depend on anything else............
 
-//   db.customers = new Datastore()
-//   db.customers.loadDatabase()
+  //   db.customers = new Datastore()
+  //   db.customers.loadDatabase()
 
-//   // insert the sample data into our data store
-//   db.customers.insert(customers)
+  //   // insert the sample data into our data store
+  //   db.customers.insert(customers)
 
-//   // initialize app.locals (these objects will be available to our controllers)
-//   app.locals.customers = db.customers.find(customers)
-//   LOG.debug(`${app.locals.customers.query.length} customers seeded`)
+  //   // initialize app.locals (these objects will be available to our controllers)
+  //   app.locals.customers = db.customers.find(customers)
+  //   LOG.debug(`${app.locals.customers.query.length} customers seeded`)
 
   // // Products don't depend on anything else ...............
 
-  //  db.products = new Datastore()
-  // db.products.loadDatabase()
+  db.products = new Datastore()
+  db.products.loadDatabase()
 
   // // insert the sample data into our data store
-  // db.products.insert(products)
+  db.products.insert(products)
 
   // // initialize app.locals (these objects will be available to our controllers)
-  // app.locals.products = db.products.find(products)
-  // LOG.debug(`${app.locals.products.query.length} products seeded`)
+  app.locals.products = db.products.find(products)
+  LOG.debug(`${app.locals.products.query.length} products seeded`)
 
 
   // // Orders need a customer .................................
@@ -65,6 +65,6 @@ module.exports = (app) => {
   // app.locals.orderLineItems = db.orderLineItems.find(orderLineItems)
   // LOG.debug(`${app.locals.orderLineItems.query.length} orderLineItems seeded`)
 
-  
+
   LOG.info('END Seeder. Sample data read and verified.')
 }
