@@ -1,13 +1,41 @@
 <!--Author: Havya Ravipati-->
 
-<p>Order Line item Page</p>
+<br/>
+<br/>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <a href="orderlineitem/create" class="btn btn-primary new">
+        Create a new orderlineitem
+      </a>
+      <h2>Recent orderlineitem entries</h2>
+      <p>There are
+        <%= orderlineitems.query.length %> orderlineitems.
+          <br/>
+      </p>
+      <% for (var i = orderlineitems.query.length-1; i >= 0; i--) {   
+        orderlineitem = orderlineitems.query[i];   %>
+        <div class="panel panel-default">
+          <div class="panel-heading"></div>
+          <div class="text-muted pull-right"></div>
+          <div class="panel-body">
+            ID:
+            <%=  orderlineitem._id %>
+        <br> OrderID:
+        <%=orderlineitem.orderID%>
+        <br/> LineNumber:
+        <%=orderlineitem.lineNumber%>
+        <br/>productKey:
+        <%=orderlineitem.productKey%>
+                    <br/>
+                    <br/>
+                          <a href="/orderlineitem/delete/<%= orderlineitem._id  %>" class="btn btn-danger"> Delete </a>
+                          <a href="/orderlineitem/details/<%= orderlineitem._id %>" class="btn btn-info"> Details </a>
+                          <a href="/orderlineitem/edit/<%= orderlineitem._id %>" class="btn btn-warning"> Edit </a>
+          </div>
+        </div>
+        <% } %>
 
-<ul>
-    <li><a href="orderlineitem/findall">Find All</a></li>
-    <li><a href="orderlineitem/findone/0">Find One</a></li>
-    <li><a href="orderlineitem/create">Create</a></li>
-    <li><a href="orderlineitem/delete/0">Delete</a></li>
-    <li><a href="orderlineitem/details/0">Details</a></li>
-    <li><a href="orderlineitem/edit/0">Edit</a></li>
-</ul>
-
+    </div>
+  </div>
+</div>

@@ -53,7 +53,7 @@ api.get('/create', (req, res) => {
 api.get('/delete/:id', (req, res) => {
   LOG.info(`Handling GET /delete/:id ${req}`)
   const id = parseInt(req.params.id, 10) // base 10
-  const data = req.app.locals.orderlineitem.query
+  const data = req.app.locals.orderlineitems.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`RETURNING VIEW FOR ${JSON.stringify(item)}`)
@@ -69,7 +69,7 @@ api.get('/delete/:id', (req, res) => {
 api.get('/details/:id', (req, res) => {
   LOG.info(`Handling GET /details/:id ${req}`)
   const id = parseInt(req.params.id, 10) // base 10
-  const data = req.app.locals.orderlineitem.query
+  const data = req.app.locals.orderlineitems.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`RETURNING VIEW FOR ${JSON.stringify(item)}`)
@@ -85,7 +85,7 @@ api.get('/details/:id', (req, res) => {
 api.get('/edit/:id', (req, res) => {
   LOG.info(`Handling GET /edit/:id ${req}`)
   const id = parseInt(req.params.id, 10) // base 10
-  const data = req.app.locals.orderlineitem.query
+  const data = req.app.locals.orderlineitems.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`RETURNING VIEW FOR${JSON.stringify(item)}`)
@@ -103,14 +103,14 @@ api.get('/edit/:id', (req, res) => {
 api.post('/save', (req, res) => {
   LOG.info(`Handling POST ${req}`)
   LOG.debug(JSON.stringify(req.body))
-  const data = req.app.locals.orderlineitem.query
+  const data = req.app.locals.orderlineitems.query
   const item = new Model()
   LOG.info(`NEW ID ${req.body._id}`)
   item._id = parseInt(req.body._id, 10) // base 10
   item.quantity = parseInt(req.body.quantity, 10)
   item.productKey = req.body.productKey
-  item.orderID = req.body.orderID
-  item.lineNumber = req.body.lineNumber
+  item.orderID = parseInt(req.body.orderID,10)
+  item.lineNumber = parseInt(req.body.lineNumber,10)
 
 
     data.push(item)
@@ -124,7 +124,7 @@ api.post('/save/:id', (req, res) => {
   LOG.info(`Handling SAVE request ${req}`)
   const id = parseInt(req.params.id, 10) // base 10
   LOG.info(`Handling SAVING ID=${id}`)
-  const data = req.app.locals.orderlineitem.query
+  const data = req.app.locals.orderlineitems.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`ORIGINAL VALUES ${JSON.stringify(item)}`)
@@ -132,8 +132,8 @@ api.post('/save/:id', (req, res) => {
   item._id = parseInt(req.body._id, 10) // base 10
   item.quantity = parseInt(req.body.quantity, 10)
   item.productKey = req.body.productKey
-  item.orderID = req.body.orderID
-  item.lineNumber = req.body.lineNumber
+  item.orderID = parseInt(req.body.orderID,10)
+  item.lineNumber = parseInt(req.body.orderID,10)
   LOG.info(`SAVING UPDATED orderlineitem ${JSON.stringify(item)}`)
   return res.redirect('/orderlineitem')
   
@@ -144,7 +144,7 @@ api.post('/delete/:id', (req, res) => {
   LOG.info(`Handling DELETE request ${req}`)
   const id = parseInt(req.params.id, 10) // base 10
   LOG.info(`Handling REMOVING ID=${id}`)
-  const data = req.app.locals.orderlineitem.query
+  const data = req.app.locals.orderlineitems.query
   const item = find(data, { _id: id })
   if (!item) {
     return res.end(notfoundstring)

@@ -8,7 +8,7 @@ const LOG = require('../utils/logger.js')
 // const customers = require('../data/customers.json')
 const products = require('../data/products.json')
 const orders = require('../data/orders.json')
-//const orderLineItems = require('../data/orderLineItems.json')
+const orderlineitems = require('../data/orderlineitems.json')
 
 //........................................................
 
@@ -55,15 +55,15 @@ module.exports = (app) => {
 
   // // Each Order Line Item needs a product and an order...................
 
-  // db.orderLineItems = new Datastore()
-  // db.orderLineItems.loadDatabase()
+  db.orderlineitems = new Datastore()
+  db.orderlineitems.loadDatabase()
 
   // // insert the sample data into our data store
-  // db.orderLineItems.insert(orderLineItems)
+  db.orderlineitems.insert(orderlineitems)
 
   // // initialize app.locals (these objects will be available to our controllers)
-  // app.locals.orderLineItems = db.orderLineItems.find(orderLineItems)
-  // LOG.debug(`${app.locals.orderLineItems.query.length} orderLineItems seeded`)
+  app.locals.orderlineitems = db.orderlineitems.find(orderlineitems)
+  LOG.debug(`${app.locals.orderlineitems.query.length} orderlineitems seeded`)
 
 
   LOG.info('END Seeder. Sample data read and verified.')

@@ -1,5 +1,26 @@
-<% include header %>
+<!--Author: Havya Ravipati-->
+<br/>
+<br/>
+<h2>Confirm deletion of orderlineitem</h2>
+<br/>
+<br/> ID:
+<%=  orderlineitem._id %>
+<br> OrderID:
+<%=orderlineitem.orderID%>
+<br/> lineNumber:
+<%=orderlineitem.lineNumber%>
+<br/> productKey:
+<%=orderlineitem.productKey%>
+<br/> quantity:
+<%=orderlineitem.quantity%>
+<br/>
+<br/>
+        
+<form method="get" action="/orderlineitem">
+  <input type="submit" value="Return to list" class="btn btn-caution" />
+</form>
 
-<p> Delete Orderline </p>
-
-<% include footer %>
+<br/>
+<form method="POST" action="/orderlineitem/delete/<%= orderlineitem._id %>">
+  <input type="submit" value="Delete this item" class="btn btn-danger pull-right" />
+</form>
