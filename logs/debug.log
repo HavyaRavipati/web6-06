@@ -1461,3 +1461,24 @@ ReferenceError: orderLineItems is not defined
 2018-11-21T00:44:20.771Z - debug: GET /orderlineitem/edit/4
 2018-11-21T00:44:20.776Z - info: Handling GET /edit/:id [object Object]
 2018-11-21T00:44:20.778Z - info: RETURNING VIEW FOR{"_id":4,"orderID":54532,"lineNumber":2,"productKey":"Matress","quantity":1}
+2018-11-21T00:51:44.341Z - debug: GET /
+2018-11-21T01:00:54.542Z - info: Environment variables loaded.
+2018-11-21T01:00:54.554Z - debug: START routing
+2018-11-21T01:00:54.600Z - debug: END routing
+2018-11-21T01:00:54.600Z - info: Loaded routing.
+2018-11-21T01:00:54.664Z - info: START seeder.
+2018-11-21T01:00:54.670Z - debug: 5 products seeded
+2018-11-21T01:00:54.673Z - debug: 4 orders seeded
+2018-11-21T01:00:54.677Z - debug: 5 orderlineitems seeded
+2018-11-21T01:00:54.677Z - info: END Seeder. Sample data read and verified.
+2018-11-21T01:01:05.686Z - debug: GET /
+2018-11-21T01:01:07.523Z - debug: GET /orderlineitem
+2018-11-21T01:02:06.316Z - debug: GET /orderlineitem/create
+2018-11-21T01:02:06.318Z - info: Handling GET /create[object Object]
+2018-11-21T01:02:06.330Z - debug: {"quantity":1}
+2018-11-21T01:02:27.251Z - debug: POST /orderlineitem/save
+2018-11-21T01:02:27.344Z - info: Handling POST [object Object]
+2018-11-21T01:02:27.344Z - debug: {"_id":"6","orderID":"23456","lineNumber":"32425","productKey":"32425","quantity":"1"}
+2018-11-21T01:02:27.345Z - info: NEW ID 6
+2018-11-21T01:02:27.353Z - info: SAVING NEW orderline {"quantity":1,"_id":6,"productKey":"32425","orderID":23456,"lineNumber":32425}
+2018-11-21T01:02:27.367Z - debug: GET /orderlineitem
