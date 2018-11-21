@@ -23,15 +23,15 @@ const ProductSchema = new mongoose.Schema({
   },
   MFD:
   {
-    type: String,
+    type: Date,
     required: true,
-    default: "11/13/2018"
+    //default: 'Date'
   },
   EXD:
   {
-    type: String,
+    type: Date,
     required: true,
-    default: "Best before 2 months from MFD"
+   //default: 'Date'
   }
 
 })

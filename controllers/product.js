@@ -110,6 +110,8 @@ api.post('/save', (req, res) => {
   item.productKey = req.body.productKey
   item.description = req.body.description
   item.unitPrice = parseInt(req.body.unitPrice, 10)
+  item.MFD = req.body.MFD
+  item.EXD = req.body.EXD
   
 
     data.push(item)
@@ -130,6 +132,8 @@ api.post('/save/:id', (req, res) => {
   LOG.info(`UPDATED VALUES: ${JSON.stringify(req.body)}`)
   item.productKey = req.body.productKey
   item.description = req.body.description
+  item.MFD = req.body.MFD
+  item.EXD = req.body.EXD
   item.unitPrice = parseInt(req.body.unitPrice, 10)
    LOG.info(`SAVING UPDATED product ${JSON.stringify(item)}`)
   return res.redirect('/product')
