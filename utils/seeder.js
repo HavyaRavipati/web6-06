@@ -8,7 +8,7 @@ const LOG = require('../utils/logger.js')
 // const customers = require('../data/customers.json')
 const products = require('../data/products.json')
 const orders = require('../data/orders.json')
-const orderlineitems = require('../data/orderlineitems.json')
+const orderlineitems = require('../data/orderLineItems.json')
 
 //........................................................
 
