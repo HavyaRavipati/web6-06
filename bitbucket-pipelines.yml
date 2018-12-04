@@ -1,14 +1,10 @@
-# This is a sample build configuration for JavaScript.
-# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
-# Only use spaces to indent your .yml configuration.
-# -----
-# You can specify a custom docker image from Docker Hub as your build environment.
+
 image: node:8.12.0
 
 pipelines:
   default:
     - step:
-       
-        script: 
-         - git push https://heroku:d13ac95f-9e8b-4deb-9f0f-11efd6d01c2c@git.heroku.com/project6-06.git HEAD
-
+        
+        script:
+        - git push https://heroku:c9f9389a-6536-45f7-ae41-290cc6a474ee@git.heroku.com/mvcvamshee.git HEAD 
+         

@@ -1,43 +1,45 @@
+
 [
-    {
-      "_id": 1,
-      "productKey": "pendrive",
-      "description":"place to store memory or data",
-      "unitPrice":90.00,
-      "MFD":"11/13/2018",
-      "EXD":"NO EXPIRY"
+      {
+    "_productid": 1,
+    "productName": "pendrive",
+    "productDescription": "place to store memory or data",
+    "price": 90,
+    "productCategory": "Accessories",
+    "sellerId":1
+  },
+  {
+      "_productid": 2,
+      "productName": "Bread",
+      "productDescription": "Eat",
+      "price": 1,
+      "productCategory": "Food",
+      "sellerId":2
     },
     {
-        "_id": 2,
-        "productKey": "Bread",
-        "description":"eat",
-        "unitPrice":1.00,
-        "MFD":"11/13/2018",
-        "EXD":"Best before 2 weeks"
+      "_productid": 3,
+      "productName": "Dress",
+      "productDescription": "To wear",
+      "price": 10,
+      "productCategory": "Clothes",
+      "sellerId":3
     },
     {
-        "_id": 3,
-        "productKey": "Dress",
-        "description":"to wear",
-        "unitPrice":10.00,
-        "MFD":"11/13/2018",
-        "EXD":"no expiry"
+      "_productid": 4,
+      "productName": "matress",
+      "productDescription": "To sleep",
+      "price": 15,
+      "productCategory": "Bedding",
+      "sellerId":4
     },
     {
-        "_id": 4,
-        "productKey": "matress",
-        "description":"to sleep",
-        "unitPrice":15.00,
-        "MFD":"11/13/2018",
-        "EXD":"no expiry"
-    },
-    {
-        "_id": 5,
-        "productKey": "LED bulbs ",
-        "description":"to emlight",
-        "unitPrice":18.00,
-        "MFD":"11/13/2018",
-        "EXD":"no expiry"
+      "_productid": 5,
+      "productName": "LED bulbs",
+      "productDescription": "to emlight",
+      "price": 18,
+      "productCategory": "Accessories",
+      "sellerId":5
     }
+    
 ]
     

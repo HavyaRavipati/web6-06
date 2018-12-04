@@ -1,10 +1,11 @@
+//@author Sai Varun Reddy Anugu
 const express = require('express')
 const api = express.Router()
 const Model = require('../models/order.js')
 const LOG = require('../utils/logger.js')
 const find = require('lodash.find')
 const remove = require('lodash.remove')
-const notfoundstring = 'order'
+const notfoundstring = 'orders'
 
 // RESPOND WITH JSON DATA  --------------------------------------------
 
@@ -103,25 +104,15 @@ api.post('/save', (req, res) => {
   const item = new Model()
   LOG.info(`NEW ID ${req.body._id}`)
   item._id = parseInt(req.body._id, 10) // base 10
-  item.name = req.body.name
-  item.breed = req.body.breed
-  item.age = parseInt(req.body.age, 10)
-  item.parents = []
-  item.parents.length = 0
-  if (req.body.parentName.length > 0) {
-    for (let count = 0; count < req.body.parentName.length; count++) {
-      item.parents.push(
-        {
-          parentName: req.body.parentName[count],
-          parentBreed: req.body.parentBreed,
-          parentAge: parseInt(req.body.parentAge[count], 10)
-        }
-      )
-    }
-    data.push(item)
-    LOG.info(`SAVING NEW order ${JSON.stringify(item)}`)
-    return res.redirect('/order')
-  }
+  item.firstname = req.body.firstname
+  item.lastname = req.body.lastname
+  item.datePlaced = req.body.datePlaced
+  item.dateShipped = req.body.dateShipped
+  item.paymentType = req.body.paymentType
+  item.paid = req.body.paid
+  data.push(item)
+  LOG.info(`SAVING NEW order ${JSON.stringify(item)}`)
+  return res.redirect('/order')
 })
 
 // POST update
@@ -134,24 +125,14 @@ api.post('/save/:id', (req, res) => {
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`ORIGINAL VALUES ${JSON.stringify(item)}`)
   LOG.info(`UPDATED VALUES: ${JSON.stringify(req.body)}`)
-  item.name = req.body.name
-  item.breed = req.body.breed
-  item.age = parseInt(req.body.age, 10)
-  item.parents = []
-  item.parents.length = 0
-  if (req.body.parentName.length > 0) {
-    for (let count = 0; count < req.body.parentName.length; count++) {
-      item.parents.push(
-        {
-          parentName: req.body.parentName[count],
-          parentBreed: req.body.parentBreed[count],
-          parentAge: parseInt(req.body.parentAge[count], 10)
-        }
-      )
-    }
-    LOG.info(`SAVING UPDATED order ${JSON.stringify(item)}`)
+  item.firstname = req.body.firstname
+  item.lastname = req.body.lastname
+  item.datePlaced = req.body.datePlaced
+  item.dateShipped = req.body.dateShipped
+  item.paymentType = req.body.paymentType
+  item.paid = req.body.paid
+    LOG.info(`SAVING UPDATED orderLine ${JSON.stringify(item)}`)
     return res.redirect('/order')
-  }
 })
 
 // DELETE id (uses HTML5 form method POST)

@@ -1,48 +1,37 @@
+
 <div class="container">
-    
+  <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-          aria-controls="navbar">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-       <!----<a class="navbar-brand" href="/"> E-Commerce</a>-->
         <a class="navbar-brand" href="/">Welcome</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li>
-            <a href="/customer">Customer</a>
+            <a href="/customer">Customers</a>
           </li>
           <li>
-              <a href="/order">Order</a>
-            </li>
-            <li>
-                <a href="/product">Product</a>
-              </li>
-              <li>
-                  <a href="/orderlineitem">Orderlineitem</a>
-                </li>
-         <!--This page allows for 'About' section to link to individual web sites-->
-
-<li class="dropdown">
-  <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu">
-          <li><a href="#">Akila Gandra</a></li>
-          <li><a href="#">Marton Bagoly</a></li>
-          <li><a href="#">Sai varun Anugu</a></li>
-          <li><a href="https://havya03.herokuapp.com/">Havya Ravipati</a></li>
+            <a href="/products">Products</a>
+          </li>
+          <li>
+            <a href="/order">Orders</a>
+          </li>
+          <li>
+            <a href="/orderLine">Order Line</a>
+          </li>
+          <% include about.ejs %>
         </ul>
-      </li>
-  
-        </ul>
-
+        
       </div>
       <!--/.navbar-collapse -->
     </div>

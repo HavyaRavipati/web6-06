@@ -1,3 +1,4 @@
+//@author Havya Ravipati
 const mongoose = require('mongoose')
 
 const OrderLineItemSchema = new mongoose.Schema({
@@ -6,7 +7,6 @@ const OrderLineItemSchema = new mongoose.Schema({
       type: Number,
       required: true
     },
-
     lineNumber: {
       type: Number,
       required: true
@@ -20,6 +20,5 @@ const OrderLineItemSchema = new mongoose.Schema({
       required: true, 
       default: 1
     }
-    
 })
 module.exports = mongoose.model('OrderLineItem', OrderLineItemSchema)

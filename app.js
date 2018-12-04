@@ -1,10 +1,10 @@
+//Author: Hayden Rainey
 
 /**
  * @file app.js
  * The starting point of the application.
  * Express allows us to configure our app and use
  * dependency injection to add it to the http server.
- * 
  * The server-side app starts and begins listening for events.
  *
  */
@@ -78,5 +78,12 @@ app.listen(app.get('port'), () => {
   console.log('App is running at http://localhost:%d in %s mode', app.get('port'), app.get('env'))
   console.log('  Press CTRL-C to stop\n')
 })
+
+// log calls
+app.use((req, res, next) => {
+  LOG.debug('%s %s', req.method, req.url)
+  next()
+ })
+ 
 
 module.exports = app
